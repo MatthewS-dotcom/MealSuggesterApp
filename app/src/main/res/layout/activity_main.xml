@@ -5,50 +5,59 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4C403"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
-    android:background="#FFF8E1"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="396dp"
-        android:layout_height="68dp"
+        android:layout_width="395dp"
+        android:layout_height="98dp"
         android:layout_marginBottom="10dp"
-        android:text="Enter time of day (breakfast, light snack, lunch, quick bite, dinner, or
-        dessert):"
+        android:fontFamily="casual"
+        android:text="Enter time of day (morning, mid-morning, afternoon, mid-afternoon, dinner, or after
+        dinner):"
         android:textSize="18sp" />
 
     <EditText
         android:id="@+id/timeInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="e.g, breakfast"
+        android:fontFamily="sans-serif-black"
+        android:hint="e.g, morning"
         android:inputType="text" />
 
     <Button
         android:id="@+id/suggestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Meal Suggestion"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:text="Get Meal Suggestion" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/primary"
         android:text="Reset"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/resultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:layout_marginTop="20dp"
         android:textColor="#D32F2F"
-        android:layout_marginTop="20dp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/food_items_for_app" />
 
 
 </LinearLayout>
